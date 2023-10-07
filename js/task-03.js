@@ -18,7 +18,7 @@ console.log(ul);
 
 function renderList() { 
   const markup = images.map(({ url, alt }) => {
-    return `<img src='${url}' alt='${alt}'>`
+    return `<img src='${url}' alt='${alt}' class='image'>`
   }).join("");
 
   ul.innerHTML = markup;

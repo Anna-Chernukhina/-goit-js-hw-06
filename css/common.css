@@ -27,3 +27,7 @@ button {
   display: flex;
   gap: 30px;
 }
+
+.image {
+  width: calc((100% / 3) - 60px);
+}
