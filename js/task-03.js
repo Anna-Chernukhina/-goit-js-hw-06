@@ -12,3 +12,16 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const ul = document.querySelector(".gallery");
+console.log(ul);
+
+function renderList() { 
+  const markup = images.map(({ url, alt }) => {
+    return `<img src='${url}' alt='${alt}'>`
+  }).join("");
+
+  ul.innerHTML = markup;
+}
+
+renderList();
